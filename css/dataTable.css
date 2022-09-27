@@ -1,0 +1,61 @@
+.dataTables_wrapper .dataTables_length select {
+    width: 4rem !important;
+    padding: 0.75rem 5px !important;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    width: 20rem !important;
+    padding: 0.75rem 5px !important;
+}
+
+table.dataTable thead th, table.dataTable tfoot th {
+    font-weight: 500;
+    font-size: large;
+}
+
+/* Link pagintaion */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #3b82f6 !important;
+    border: none;
+    border-radius: .5rem;
+}
+
+/* Hover pagintaion */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #3b82f6 !important;
+    border: none;
+    background-color: #f1f5f9;
+    background: #f1f5f9;
+}
+
+/* Active pagintaion */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: white !important;
+    border: none;
+    background-color: #3b82f6;
+    background: #3b82f6;
+}
+
+/* Active pagintaion (Other) */
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    outline: none;
+    color: white !important;
+    background-color: #3b82f6;
+    background: #3b82f6;
+    box-shadow: none;
+}
+
+/* Label info pagintaion */
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: #5f6c7b;
+}
+
+
