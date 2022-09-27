@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
+
+    <link rel="shortcut icon" href="./img/pictures/escudo-unsij-white.png" type="image/png">
+    <title>Nuestros profesores | Licenciatura en Informática</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <!-- Navbar -->
+        <div class="navbar-container">
+            <div class="navbar-content-logo">
+                <a href="./index.html" class="navbar-logo">
+                    <img src="./img/pictures/escudo-unsij-white.png" alt="Escudo de la UNSIJ." width="60">
+                    <span class="navbar-logo-name hidden lg:block">Licenciatura en Informática</span>
+                    <span class="navbar-logo-name block lg:hidden">Lic. en Informática</span>
+                </a>
+                <button class="navbar-menu" id="menu-botton">
+
+                </button>
+            </div>
+            <nav class="navbar-nav">
+                <ul class="navbar-nav-content">
+                    <li>
+                        <a href="./acerca_de.html" class="navbar-link">Acerca de la carrera</a>
+                    </li>
+                    <li>
+                        <a href="./nuestros_profesores.html" class="navbar-link navbar-link-active">Nuestros profesores</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /Navbar -->
+
+        <!-- Cinta -->
+        <div class="brand">
+            <nav class="brand-nav">
+                <ul class="brand-nav-ul">
+                    <li>
+                        <a href="https://aula.unsij.edu.mx/moodle/login/index.php" target="_blank"
+                            class="link link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                            </svg>
+                            Aula Virtual
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.unsij.edu.mx/webmail/src/login.php" target="_blank" class="link link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            Correo Institucional
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://lectus.unsij.edu.mx:8080/lectus/" target="_blank" class="link link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                            LECTUS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://alumnos.unsij.edu.mx/user_sessions/new" target="_blank" class="link link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                <path
+                                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                            </svg>
+                            NES Alumnos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://alumnos.unsij.edu.mx/user_sessions/new" target="_blank" class="link link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                            NES Profesores
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /Cinta -->
+    </header>
+    <!-- /Navbar -->
+
+
+    <!-- Breadcumb -->
+    <div class="breadcumb">
+        <nav class="breadcumb-container">
+            <div class="breadcumb-item">
+                <a class="link-icon link" href="./index.html">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                    </div>
+                    <span>
+                        Inicio
+                    </span>
+                </a>
+                <div class="link-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="breadcumb-item">
+                <span>
+                    Nuestros profesores
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- /Breadcumb -->
+
+
+    <!-- Header -->
+    <header>
+        <h1 class="text-principal">
+            Nuestros profesores
+        </h1>
+    </header>
+    <!-- /Header -->
+
+
+    <!-- Mensaje feedback -->
+    <div class="absolute hidden feed-copy">
+        <span class="teacher_item-bullet fixed">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+            </div>
+            Correo copiado
+        </span>
+    </div>
+    <!-- /Mensaje feedback -->
+
+
+    <!-- Contennido -->
+    <main class="section-spacing">
+        <!-- Profesores -->
+        <section class="section-container">
+            
+            <div class="teacher-section">
+                
+                <article class="teacher_item group" data-aos="zoom-in">
+                    <div class="teacher_item-content-image">
+                        <div class="teacher_item-bg-image">
+                            <img src="./img/teachers/lobato.png" alt="Foto de perfil del profesor"
+                                class="teacher_item-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="teacher_item-content-text">
+                        <header class="teacher_item-title">
+                            Dr. Salvador Enrique Lobato Larios
+                        </header>
+                        <div class="teacher_item-info">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                    <path
+                                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                </svg>
+                            </div>
+                            <p>
+                                Doctorado en Ciencias
+                            </p>
+                        </div>
+                        <div class="teacher_item-info">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <button class="teacher_item-info-email copy email"
+                                data-clipboard-text="salvadorl@unsij.edu.mx">
+                                salvadorl@unsij.edu.mx
+                            </button>
+                        </div>
+                        <div class="teacher_item-info">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                </svg>
+                            </div>
+                            <p>
+                                Instituto de idiomas
+                            </p>
+                        </div>
+                        <div>
+                            <a class="link-icon link" href="#" target="_blank">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span>
+                                        Ver currículum vitae
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="teacher_item group" data-aos="zoom-in">
+                    <div class="teacher_item-content-image">
+                        <div class="teacher_item-bg-image">
+                            <img src="./img/teachers/florentino.png" alt="Foto de perfil del profesor"
+                                class="teacher_item-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="teacher_item-content-text">
+                        <header class="teacher_item-title">
+                            M.I.T.I.Florentino Méndez Gijón
+                        </header>
+                        <div class="teacher_item-info">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                    <path
+                                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                </svg>
+                            </div>
+                            <p>
+                                Maestría en Ingeniería en Tecnologías de la Información
+                            </p>
+                        </div>
+                        <div class="teacher_item-info">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <button class="teacher_item-info-email copy email"
+                                data-clipboard-text="fmendez@unsij.edu.mx">
+                                fmendez@unsij.edu.mx
+                            </button>
+                        </div>
+                        <div class="teacher_item-info">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                </svg>
+                            </div>
+                            <p>
+                                Instituto de ciencias ambientales
+                            </p>
+                        </div>
+                        <div>
+                            <a class="link-icon link" href="#" target="_blank">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span>
+                                        Ver currículum vitae
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="teacher_item group" data-aos="zoom-in">
+                    <div class="teacher_item-content-image">
+                        <div class="teacher_item-bg-image">
+                            <img src="./img/teachers/mireya.png" alt="Foto de perfil del profesor"
+                                class="teacher_item-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="teacher_item-content-text">
+                        <header class="teacher_item-title">
+                            M.A.D. Mireya López Luna
+                        </header>
+                        <div class="teacher_item-info">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                    <path
+                                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                </svg>
+                            </div>
+                            <p>
+                                Maestría en Alta Dirección
+                            </p>
+                        </div>
+                        <div class="teacher_item-info">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <button class="teacher_item-info-email copy email"
+                                data-clipboard-text="mireya@unsij.edu.mx">
+                                mireya@unsij.edu.mx
+                            </button>
+                        </div>
+                        <div class="teacher_item-info">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                </svg>
+                            </div>
+                            <p>
+                                Instituto de ciencias ambientales
+                            </p>
+                        </div>
+                        <div>
+                            <a class="link-icon link" href="#" target="_blank">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span>
+                                        Ver currículum vitae
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                            
+            </div>
+            
+            <!--
+            <div class="flex flex-col justify-center items-center h-40">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                    </svg>                                  
+                </div>
+                <p class="text-content">Sin profesores para mostrar</p>
+            </div>
+            -->
+        </section>
+        <!-- /Profesores -->
+    </main>
+    <!-- Contenido -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-content-logo">
+                <a href="http://www.unsij.edu.mx/" target="_blank">
+                    <img src="./img/pictures/escudo-unsij-white.png" alt="Escudo de la UNSIJ."
+                        class="h-28 w-auto object-cover">
+                </a>
+                <a href="http://www.suneo.mx/" target="_blank">
+                    <img src="./img/pictures/escudo-suneo.png" alt="Escudo del SUNEO." class="h-14 w-auto object-cover">
+                </a>
+            </div>
+
+            <div class="footer-content-link">
+                <header class="footer-title">Medios de contacto</header>
+                <hr class="footer_line">
+                <a href="https://goo.gl/maps/1HaMWs4H2GPHsqrJ7" target="_blank" class="footer-link">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="footer-link-icon" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    Camino a la Universidad S/N, 68725 Ixtlán de Juárez, Oax.
+                </a>
+                <a href="http://www.unsij.edu.mx/" target="_blank" class="footer-link">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="footer-link-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
+                        </svg>
+                    </div>
+                    www.unsij.edu.mx
+                </a>
+                <a href="mailto:informatica@unsij.edu.mx" class="footer-link">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="footer-link-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                            <path
+                                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                        </svg>
+                    </div>
+                    informatica@unsij.edu.mx
+                </a>
+                <a href="tel:9515536362" class="footer-link">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="footer-link-icon" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    951 553 63 62
+                </a>
+            </div>
+
+            <div class="footer-content-link">
+                <header class="footer-title">Redes sociales</header>
+                <hr class="footer_line">
+                <div class="footer-content-social-icon">
+                    <a href="https://www.facebook.com/InformaticaUNSIJ/" target="_blank" class="footer-social_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook w-9 h-9"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/unsij_suneo?lang=es" target="_blank" class="footer-social_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter w-9 h-9"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/c/UNSIJ_SUNEO" target="_blank" class="footer-social_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube w-9 h-9"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+
+    <!-- Menú -->
+    <script src="./js/mobile-menu.js"></script>
+
+    <!-- Animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animation.js"></script>
+
+    <!-- Carrusel -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/carousel.js"></script>
+
+    <!-- Copy Clipboard-->
+    <script>
+        var clipboard = new ClipboardJS('.copy');
+        var email = document.querySelector('.email');
+        var message = document.querySelector('.feed-copy');
+
+        clipboard.on('success', function (e) {
+            message.classList.remove("hidden");
+            message.classList.add("block");
+
+            setTimeout(function () {
+                message.classList.toggle("hidden");
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

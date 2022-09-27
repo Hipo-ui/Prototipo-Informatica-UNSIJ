@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/pictures/escudo-unsij-white.png" type="image/png">
+    <title>Acerca de | Licenciatura en Informática</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <!-- Navbar -->
+        <div class="navbar-container">
+            <div class="navbar-content-logo">
+                <a href="./index.html" class="navbar-logo">
+                    <img src="./img/pictures/escudo-unsij-white.png" alt="Escudo de la UNSIJ." width="60">
+                    <span class="navbar-logo-name hidden lg:block">Licenciatura en Informática</span>
+                    <span class="navbar-logo-name block lg:hidden">Lic. en Informática</span>
+                </a>
+                <button class="navbar-menu" id="menu-botton">
+
+                </button>
+            </div>
+            <nav class="navbar-nav">
+                <ul class="navbar-nav-content">
+                    <li>
+                        <a href="./acerca_de.html" class="navbar-link navbar-link-active">Acerca de la carrera</a>
+                    </li>
+                    <li>
+                        <a href="./nuestros_profesores.html" class="navbar-link">Nuestros profesores</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /Navbar -->
+
+        <!-- Cinta -->
+        <div class="brand">
+            <nav class="brand-nav">
+                <ul class="brand-nav-ul">
+                    <li>
+                        <a href="https://aula.unsij.edu.mx/moodle/login/index.php" target="_blank"
+                            class="link link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                            </svg>
+                            Aula Virtual
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.unsij.edu.mx/webmail/src/login.php" target="_blank" class="link link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                            </svg>
+                            Correo Institucional
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://lectus.unsij.edu.mx:8080/lectus/" target="_blank" class="link link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                            </svg>
+                            LECTUS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://alumnos.unsij.edu.mx/user_sessions/new" target="_blank" class="link link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                            </svg>
+                            NES Alumnos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://alumnos.unsij.edu.mx/user_sessions/new" target="_blank" class="link link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                            </svg>
+                            NES Profesores
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /Cinta -->
+    </header>
+    <!-- /Navbar -->
+
+
+    <!-- Breadcumb -->
+    <div class="breadcumb">
+        <nav class="breadcumb-container">
+            <div class="breadcumb-item">
+                <a class="link-icon link" href="./index.html">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                    </div>
+                    <span>
+                        Inicio
+                    </span>
+                </a>
+                <div class="link-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-icon" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="breadcumb-item">
+                <span>
+                    Acerca de
+                </span>
+            </div>
+        </nav>
+    </div>
+    <!-- /Breadcumb -->
+
+
+    <!-- Header -->
+    <header>
+        <h1 class="text-principal">
+            Acerca de la carrera
+        </h1>
+    </header>
+    <!-- /Header -->
+
+
+    <!-- Contennido -->
+    <main class="section-spacing">
+        <!-- Nuestro objetivo -->
+        <section class="section-container">
+            <div class="info_item bg-white">
+                <div class="info_item-content-text">
+                    <header class="text-header">
+                        Nuestro objetivo
+                    </header>
+                    <p class="text-content">
+                        Formar licenciados en Informática líderes, analíticos,
+                        críticos, creativos y emprendedores, con una sólida preparación científica,
+                        tecnológica y humanista, con la capacidad y habilidad para analizar, desarrollar
+                        e implementar sistemas de información, así como para administrar óptimamente los
+                        recursos informáticos de una empresa o institución para contribuir a mejorar
+                        su funcionamiento, colaborando activamente para dar respuesta a la problemática y
+                        necesidades que se detecten en materia de informática, actuando como agentes de
+                        cambio para el desarrollo de la región, del estado y del país.
+                    </p>
+                </div>
+                <div class="info_item-content-image block">
+                    <div class="swiper swiperPictures h-full">
+                        <div class="swiper-wrapper h-full">
+                            <div class="swiper-slide">
+                                <div class="info-item-cover">
+                                    <img src="./img/pictures/imagen-5.jpeg"
+                                        alt="Alumnos y profesor frente a una computadora." class="info_item-image"
+                                        loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="info-item-cover">
+                                    <img src="./img/pictures/imagen-6.jpeg" alt="Alumno viendo una computadora."
+                                        class="info_item-image" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="info-item-cover">
+                                    <img src="./img/pictures/imagen-7.jpeg"
+                                        alt="Alumnos y profesor dentro de un laboratorio de prácticas."
+                                        class="info_item-image" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Nuestro objetivo -->
+
+
+        <!-- Misión y Visión -->
+        <div class="section-continer">
+            <section class="swiper swiperMisionVision h-full w-full" style="--swiper-theme-color:#ff6700;">
+                <div class="swiper-wrapper h-full w-full">
+
+                    <div class="swiper-slide h-full w-full">
+                        <article class="section-container">
+                            <div class="info_item flex-col-reverse lg:flex-row bg-white">
+                                <div class="info_item-content-image">
+                                    <div class="info-item-cover">
+                                        <img src="./img/pictures/imagen-15.jpeg"
+                                            alt="Alumna y profesores configurando un sistema de red."
+                                            class="info_item-image" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="info_item-content-text">
+                                    <header class="text-header">
+                                        Misión
+                                    </header>
+                                    <p class="text-content">
+                                        Formar profesionistas altamente competitivos en el área de la
+                                        Informática, capaces de detectar, proponer y desarrollar soluciones
+                                        informáticas eficientes, brindando a los estudiantes una educación
+                                        superior de calidad, fomentando el desarrollo científico a través
+                                        de la investigación y promoviendo el desarrollo tecnológico de la región.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide h-full w-full">
+                        <article class="section-container">
+                            <div class="info_item bg-white">
+                                <div class="info_item-content-text">
+                                    <header class="text-header">
+                                        Visión
+                                    </header>
+                                    <p class="text-content">
+                                        Consolidarse como un programa educativo reconocido por el alto nivel
+                                        académico
+                                        de sus alumnos y egresados, el buen desempeño profesional, y el manejo
+                                        responsable de la información, mostrando ser un programa generador de
+                                        profesionales comprometidos con su entorno y capaces de mejorar la situación
+                                        económica, social y tecnológica de la región, sin descuidar el ambiente y la
+                                        cultura, fortaleciendo la integración de los egresados en el ámbito global.
+                                    </p>
+                                </div>
+                                <div class="info_item-content-image">
+                                    <div class="info-item-cover">
+                                        <img src="./img/pictures/imagen-17.jpeg" alt="Alumna desarrollando un sitio web."
+                                            class="info_item-image" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+
+                <div class="mt-14">
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+            </section>
+        </div>
+        <!-- /Misión y Visión -->
+
+
+        <!-- Modelo educativo -->
+        <div class="section-fluid">
+            <section class="section-container">
+                <header class="text-header text-center">
+                    Modelo educativo
+                </header>
+                <div class="feature-grid">
+
+                    <article class="feature_item">
+                        <header class="feature_item-header">
+                            <div class="feature_item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    class="feature_item-icon-svg">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="w-10/12">
+                                Profesores de tiempo completo
+                            </p>
+                        </header>
+                        <p class="feature_item-content">
+                            Nuestros profesores están involucrados a tiempo completo en la docencia y la
+                            investigación.
+                        </p>
+                    </article>
+
+                    <article class="feature_item">
+                        <header class="feature_item-header">
+                            <div class="feature_item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="feature_item-icon-svg"
+                                    viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V3.936z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="w-10/12">
+                                Prácticas de campo
+                            </p>
+                        </header>
+                        <p class="feature_item-content">
+                            Nuestros estudiantes realizan actividades externas para aplicar sus conocimientos
+                            adquiridas en clases.
+                        </p>
+                    </article>
+
+                    <article class="feature_item">
+                        <header class="feature_item-header">
+                            <div class="feature_item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="feature_item-icon-svg"
+                                    viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M8.25 6.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM15.75 9.75a3 3 0 116 0 3 3 0 01-6 0zM2.25 9.75a3 3 0 116 0 3 3 0 01-6 0zM6.31 15.117A6.745 6.745 0 0112 12a6.745 6.745 0 016.709 7.498.75.75 0 01-.372.568A12.696 12.696 0 0112 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 01-.372-.568 6.787 6.787 0 011.019-4.38z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M5.082 14.254a8.287 8.287 0 00-1.308 5.135 9.687 9.687 0 01-1.764-.44l-.115-.04a.563.563 0 01-.373-.487l-.01-.121a3.75 3.75 0 013.57-4.047zM20.226 19.389a8.287 8.287 0 00-1.308-5.135 3.75 3.75 0 013.57 4.047l-.01.121a.563.563 0 01-.373.486l-.115.04c-.567.2-1.156.349-1.764.441z" />
+                                </svg>
+                            </div>
+                            <p class="w-10/12">
+                                Tutorías personalizadas
+                            </p>
+                        </header>
+                        <p class="feature_item-content">
+                            Disponemos de tutores personales para cada uno de nuestros alumnos quienes les
+                            brindan
+                            apoyo durante su formación académica.
+                        </p>
+                    </article>
+
+                    <article class="feature_item">
+                        <header class="feature_item-header">
+                            <div class="feature_item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="feature_item-icon-svg"
+                                    viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="w-10/12">
+                                Becas para todos
+                            </p>
+                        </header>
+                        <p class="feature_item-content">
+                            Ofrecemos becas a cada uno de nuestros estudiantes; becas de alimentación,
+                            de colegiatura y Jóvenes Escribiéndo el Futuro.
+                        </p>
+                    </article>
+
+                    <article class="feature_item">
+                        <header class="feature_item-header">
+                            <div class="feature_item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="feature_item-icon-svg"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M11.7 2.805a.75.75 0 01.6 0A60.65 60.65 0 0122.83 8.72a.75.75 0 01-.231 1.337 49.949 49.949 0 00-9.902 3.912l-.003.002-.34.18a.75.75 0 01-.707 0A50.009 50.009 0 007.5 12.174v-.224c0-.131.067-.248.172-.311a54.614 54.614 0 014.653-2.52.75.75 0 00-.65-1.352 56.129 56.129 0 00-4.78 2.589 1.858 1.858 0 00-.859 1.228 49.803 49.803 0 00-4.634-1.527.75.75 0 01-.231-1.337A60.653 60.653 0 0111.7 2.805z" />
+                                    <path
+                                        d="M13.06 15.473a48.45 48.45 0 017.666-3.282c.134 1.414.22 2.843.255 4.285a.75.75 0 01-.46.71 47.878 47.878 0 00-8.105 4.342.75.75 0 01-.832 0 47.877 47.877 0 00-8.104-4.342.75.75 0 01-.461-.71c.035-1.442.121-2.87.255-4.286A48.4 48.4 0 016 13.18v1.27a1.5 1.5 0 00-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.661a6.729 6.729 0 00.551-1.608 1.5 1.5 0 00.14-2.67v-.645a48.549 48.549 0 013.44 1.668 2.25 2.25 0 002.12 0z" />
+                                    <path
+                                        d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z" />
+                                </svg>
+                            </div>
+                            <p class="w-10/12">
+                                Profesores con estudios de postgrado
+                            </p>
+                        </header>
+                        <p class="feature_item-content">
+                            Contamos con profesores de maestría y doctorado. Con amplio conocimiento y
+                            experiencia
+                            en el ámbito académico e industrial.
+                        </p>
+                    </article>
+
+                    <article class="feature_item">
+                        <header class="feature_item-header">
+                            <div class="feature_item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="feature_item-icon-svg"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z" />
+                                </svg>
+                            </div>
+                            <p class="w-10/12">
+                                Fomentamos la lectura
+                            </p>
+                        </header>
+                        <p class="feature_item-content">
+                            En nuestra comunidad estudiantil fomentamos la lectura continua de libros y
+                            artículos
+                            científicos para diversificar el conocimiento.
+                        </p>
+                    </article>
+
+                </div>
+            </section>
+        </div>
+        <!-- /Modelo educativo -->
+
+
+        <!-- Perfil de Ingreso -->
+        <article class="section-container">
+            <header class="text-header">
+                Perfil de ingreso
+            </header>
+            <p class="text-content w-full lg:w-6/12">
+                El programa educativo está dirigido a estudiantes que concluyeron su bachillerato
+                general o equivalente, además es deseable que el aspirante tenga:
+            </p>
+            <div class="content-list">
+                <ul class="content-list-text">
+                    <li>
+                        Interés general por las Tecnologías de la Información y Comunicación.
+                    </li>
+                    <li>
+                        Conocimientos básicos de computación.
+                    </li>
+                    <li>
+                        Conocimientos de ciencias básicas.
+                    </li>
+                    <li>
+                        Capacidad de razonamiento lógico principalmente para la resolución de problemas.
+                    </li>
+                    <li>
+                        Ser creativo, para innovar en el diseño, gestión y creación de sistemas de
+                        información.
+                    </li>
+                    <li>
+                        Actitud emprendedora.
+                    </li>
+                </ul>
+                <ul class="content-list-text">
+                    <li>
+                        Inquietud por la investigación y los conocimiento técnicos que se ocupan del
+                        tratamiento automático de la información por medio de computadoras.
+                    </li>
+                    <li>
+                        Disposición para trabajar en equipo de manera colaborativa, comprometida y
+                        tolerante.
+                    </li>
+                    <li>
+                        Disposición para trabajar en campo y en laboratorios.
+                    </li>
+                    <li>
+                        Interés para aprender nuevos idiomas.
+                    </li>
+                    <li>
+                        Interés y disciplina en el estudio, para su mayor aprovechamiento.
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <!-- /Perfil de Ingreso -->
+
+
+        <!-- Perfil de Egreso -->
+        <section class="section-container">
+            <header class="text-header">
+                Perfil de egreso
+            </header>
+            <p class="text-content">
+                Al concluir sus estudios, el egresado aplicará sus conocimientos técnicos y
+                científicos en la solución de problemas propios de la disciplina; tendrá
+                habilidades, actitudes y valores que le permitirán desarrollar exitosamente su
+                profesión, en beneficio de la sociedad local, regional y nacional, y contará
+                con:
+            </p>
+            <nav>
+                <ul class="tab-content flex-wrap justify-center" id="tabs">
+                    <li class="tab tab-primary tab-primary-active">
+                        <a href="#first" id="default-tab">Actitudes</a>
+                    </li>
+                    <li class="tab tab-primary">
+                        <a href="#second">Conocimientos</a>
+                    </li>
+                    <li class="tab tab-primary">
+                        <a href="#third">Habilidades</a>
+                    </li>
+                    <li class="tab tab-primary">
+                        <a href="#fourth">Valores</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="tab-contents">
+
+                <article id="first">
+                    <ul class="content-list-text">
+                        <li>
+                            Actuar como agente de cambio al ser capaz de descubrir oportunidades
+                            de negocio que eleven el nivel de vida de la región, del estado y del país.
+                        </li>
+                        <li>
+                            Realizar estudios de posgrado en instituciones nacionales o
+                            extranjeras, en áreas de Ingeniería de Software, Tecnologías de Información
+                            y Comunicación, Sistemas de Información, Inteligencia Artificial,
+                            Matemáticas Aplicadas, Administración de Negocios u otras áreas afines.
+                        </li>
+                    </ul>
+                </article>
+
+                <article id="second">
+                    <ul class="content-list-text">
+                        <li>
+                            Tecnologías de información y comunicación con certificaciones
+                            avalados por la industria a nivel internacional.
+                        </li>
+                        <li>
+                            Las metodologías de trabajo en campo y laboratorio; así como, la
+                            obtención, organización, análisis, interpretación y publicación de datos.
+                        </li>
+                        <li>
+                            Normas y estándares de calidad en el ejercicio de la función
+                            informática.
+                        </li>
+                        <li>
+                            Sistemas digitales, electrónica y arquitectura de las computadoras.
+                        </li>
+                        <li>
+                            Un segundo idioma para facilitar el acceso a información de
+                            vanguardia y a una comunicación en un entorno globalizado.
+                        </li>
+                    </ul>
+                </article>
+
+                <article id="third">
+                    <ul class="content-list-text">
+                        <li>
+                            Diseñar estrategias para detectar y satisfacer necesidades
+                            organizacionales relativas al uso y empleo de la información.
+                        </li>
+                        <li>
+                            Seleccionar y utilizar de manera óptima las herramientas
+                            computacionales actuales y emergentes.
+                        </li>
+                        <li>
+                            Desarrollar aplicaciones informáticas para la automatización de
+                            actividades, utilizando diferentes lenguajes de programación en
+                            diferentes plataformas.
+                        </li>
+                        <li>
+                            Diseñar, implementar y dar mantenimiento a base de datos utilizando
+                            diferentes sistemas gestores de bases de datos.
+                        </li>
+                        <li>
+                            Diseñar, implementar y dar mantenimiento a tecnología de redes
+                            informáticas.
+                        </li>
+                        <li>
+                            Diseñar e implementar soluciones para Internet de las Cosas (IoT).
+                        </li>
+                        <li>
+                            Dirigir y participar en grupos de trabajo multi e interdisciplinarios
+                            que proponen soluciones integrales en su entorno.
+                        </li>
+                        <li>
+                            Observar y fomentar el cumplimiento de las disposiciones de carácter
+                            legal relacionadas con la función informática.
+                        </li>
+                    </ul>
+                </article>
+
+                <article id="fourth">
+                    <ul class="content-list-text">
+                        <li>
+                            Se desempeña profesionalmente con ética, manteniendo una actitud de
+                            aprendizaje continuo y afrontando nuevos retos.
+                        </li>
+                        <li>
+                            Practica su disciplina con bases éticas sólidas, relacionadas con el
+                            manejo responsable de la información.
+                        </li>
+                        <li>
+                            Colabora con la concientización de la población para mejorar sus
+                            condiciones y calidad de vida.
+                        </li>
+                        <li>
+                            Es comprometido con su medio socio - cultural.
+                        </li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+        <!-- /Perfil de Egreso -->
+
+
+        <!-- Campo de Acción -->
+        <div class="section-fluid">
+            <section class="section-container">
+                <header class="text-header">
+                    Campo de acción
+                </header>
+                <p class="text-content w-full lg:w-8/12">
+                    El Licenciado en Informática puede desempeñarse en diversas áreas del sector público o
+                    privado, donde podrá desempeñar una gran variedad de actividades y funciones, entre las
+                    cuáles se pueden destacar en:
+                </p>
+                <div class="grid grid-cols-none gap-spacing md:grid-cols-2">
+
+                    <article class="feature_item">
+                        <header class="feature_item-header">
+                            <div class="feature_item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="feature_item-icon-svg"
+                                    viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M3 2.25a.75.75 0 000 1.5v16.5h-.75a.75.75 0 000 1.5H15v-18a.75.75 0 000-1.5H3zM6.75 19.5v-2.25a.75.75 0 01.75-.75h3a.75.75 0 01.75.75v2.25a.75.75 0 01-.75.75h-3a.75.75 0 01-.75-.75zM6 6.75A.75.75 0 016.75 6h.75a.75.75 0 010 1.5h-.75A.75.75 0 016 6.75zM6.75 9a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zM6 12.75a.75.75 0 01.75-.75h.75a.75.75 0 010 1.5h-.75a.75.75 0 01-.75-.75zM10.5 6a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zm-.75 3.75A.75.75 0 0110.5 9h.75a.75.75 0 010 1.5h-.75a.75.75 0 01-.75-.75zM10.5 12a.75.75 0 000 1.5h.75a.75.75 0 000-1.5h-.75zM16.5 6.75v15h5.25a.75.75 0 000-1.5H21v-12a.75.75 0 000-1.5h-4.5zm1.5 4.5a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008zm.75 2.25a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75v-.008a.75.75 0 00-.75-.75h-.008zM18 17.25a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="w-10/12">
+                                Unidades de informática del sector público o privado
+                            </p>
+                        </header>
+                        <ul class="feature_item-content-list">
+                            <li>
+                                Apoyando con el desarrollo de software que contribuya con el logro de los
+                                objetivos de la organización.
+                            </li>
+                            <li>
+                                Seleccionando y administrando los recursos informáticos y humanos en una
+                                organización con eficiencia, eficacia, productividad y calidad.
+                            </li>
+                            <li>
+                                Realizando estudios de factibilidad operativa, técnica y económica para
+                                proyectos informáticos.
+                            </li>
+                            <li>
+                                Llevando a cabo el diseño, instalación y administración de redes de cómputo en
+                                organizaciones donde se requiera controlar, administrar y compartir la
+                                información entre diversas áreas.
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="feature_item">
+                        <header class="feature_item-header">
+                            <div class="feature_item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="feature_item-icon-svg"
+                                    viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 6a3 3 0 013-3h13.5a3 3 0 013 3v12a3 3 0 01-3 3H5.25a3 3 0 01-3-3V6zm3.97.97a.75.75 0 011.06 0l2.25 2.25a.75.75 0 010 1.06l-2.25 2.25a.75.75 0 01-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 010-1.06zm4.28 4.28a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="w-10/12">
+                                Empresas de desarrollo de software
+                            </p>
+                        </header>
+                        <ul class="feature_item-content-list">
+                            <li>
+                                Desarrollando proyectos de software, de acuerdo a estándares de calidad
+                                definidos.
+                            </li>
+                            <li>
+                                Dirigiendo y colaborando en grupos multi e interdisciplinarios para alcanzar
+                                objetivos comunes.
+                            </li>
+                            <li>
+                                Integrando conocimientos de programación, ingeniería de software, multimedia y
+                                comunicaciones para la creación de sistemas informáticos en ambientes de red y
+                                distribuidos.
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="feature_item">
+                        <header class="feature_item-header">
+                            <div class="feature_item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="feature_item-icon-svg"
+                                    viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <p class="w-10/12">
+                                Forma independiente
+                            </p>
+                        </header>
+                        <ul class="feature_item-content-list">
+                            <li>
+                                Brindando servicios de consultoría profesional y soporte técnico.
+                            </li>
+                            <li>
+                                Generando nuevas fuentes de empleo en áreas relacionadas con la informática.
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="feature_item">
+                        <header class="feature_item-header">
+                            <div class="feature_item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="feature_item-icon-svg"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M11.584 2.376a.75.75 0 01.832 0l9 6a.75.75 0 11-.832 1.248L12 3.901 3.416 9.624a.75.75 0 01-.832-1.248l9-6z" />
+                                    <path fill-rule="evenodd"
+                                        d="M20.25 10.332v9.918H21a.75.75 0 010 1.5H3a.75.75 0 010-1.5h.75v-9.918a.75.75 0 01.634-.74A49.109 49.109 0 0112 9c2.59 0 5.134.202 7.616.592a.75.75 0 01.634.74zm-7.5 2.418a.75.75 0 00-1.5 0v6.75a.75.75 0 001.5 0v-6.75zm3-.75a.75.75 0 01.75.75v6.75a.75.75 0 01-1.5 0v-6.75a.75.75 0 01.75-.75zM9 12.75a.75.75 0 00-1.5 0v6.75a.75.75 0 001.5 0v-6.75z"
+                                        clip-rule="evenodd" />
+                                    <path d="M12 7.875a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" />
+                                </svg>
+                            </div>
+                            <p class="w-10/12">
+                                Instituciones educativas
+                            </p>
+                        </header>
+                        <ul class="feature_item-content-list">
+                            <li>
+                                Impartiendo clases a nivel medio superior y superior.
+                            </li>
+                            <li>
+                                Desarrollando investigación.
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <!-- /Campo de Acción -->
+
+
+        <!-- Plan de Estudios -->
+        <section class="section-container">
+            <header class="text-header">
+                Plan de estudios
+            </header>
+            <div class="feature-grid">
+
+                <article class="accordion_item" data-aos="zoom-in">
+                    <button class="accordion_item-tilte">
+                        Primer semestre
+                    </button>
+                    <div class="accordion_item-content">
+                        <div class="accordion_item-body">
+                            <ul class="accordion_item-list">
+                                <li>
+                                    Diseño Estructurado de Algoritmos
+                                </li>
+                                <li>
+                                    Administración
+                                </li>
+                                <li>
+                                    Lógica Matemática
+                                </li>
+                                <li>
+                                    Historia del Pensamiento Filosófico
+                                </li>
+                                <li>
+                                    Matemáticas I
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="accordion_item" data-aos="zoom-in">
+                    <button class="accordion_item-tilte">
+                        Segundo semestre
+                    </button>
+                    <div class="accordion_item-content">
+                        <div class="accordion_item-body">
+                            <ul class="accordion_item-list">
+                                <li>
+                                    Programación Estructurada
+                                </li>
+                                <li>
+                                    Electrónica I
+                                </li>
+                                <li>
+                                    Matemáticas Discretas
+                                </li>
+                                <li>
+                                    Teoría General de Sistemas
+                                </li>
+                                <li>
+                                    Matemáticas II
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="accordion_item" data-aos="zoom-in">
+                    <button class="accordion_item-tilte">
+                        Tercer semestre
+                    </button>
+                    <div class="accordion_item-content">
+                        <div class="accordion_item-body">
+                            <ul class="accordion_item-list">
+                                <li>
+                                    Estructuras de Datos
+                                </li>
+                                <li>
+                                    Electrónica II
+                                </li>
+                                <li>
+                                    Derecho y Legislación en Informática
+                                </li>
+                                <li>
+                                    Contabilidad
+                                </li>
+                                <li>
+                                    Álgebra Lineal
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="accordion_item" data-aos="zoom-in">
+                    <button class="accordion_item-tilte">
+                        Cuarto semestre
+                    </button>
+                    <div class="accordion_item-content">
+                        <div class="accordion_item-body">
+                            <ul class="accordion_item-list">
+                                <li>
+                                    Paradigmas de Programación I
+                                </li>
+                                <li>
+                                    Diseño Web
+                                </li>
+                                <li>
+                                    Bases de Datos I
+                                </li>
+                                <li>
+                                    Programación de Sistemas
+                                </li>
+                                <li>
+                                    Métodos Numéricos
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="accordion_item" data-aos="zoom-in">
+                    <button class="accordion_item-tilte">
+                        Quinto semestre
+                    </button>
+                    <div class="accordion_item-content">
+                        <div class="accordion_item-body">
+                            <ul class="accordion_item-list">
+                                <li>
+                                    Paradigmas de Programación II
+                                </li>
+                                <li>
+                                    Ingeniería de Software I
+                                </li>
+                                <li>
+                                    Bases de Datos II
+                                </li>
+                                <li>
+                                    Arquitectura de Computadoras
+                                </li>
+                                <li>
+                                    Redes I
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="accordion_item" data-aos="zoom-in">
+                    <button class="accordion_item-tilte">
+                        Sexto semestre
+                    </button>
+                    <div class="accordion_item-content">
+                        <div class="accordion_item-body">
+                            <ul class="accordion_item-list">
+                                <li>
+                                    Tecnologías Web I
+                                </li>
+                                <li>
+                                    Ingeniería de Software II
+                                </li>
+                                <li>
+                                    Programación Visual
+                                </li>
+                                <li>
+                                    Sistemas Operativos I
+                                </li>
+                                <li>
+                                    Redes II
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="accordion_item" data-aos="zoom-in">
+                    <button class="accordion_item-tilte">
+                        Séptimo semestre
+                    </button>
+                    <div class="accordion_item-content">
+                        <div class="accordion_item-body">
+                            <ul class="accordion_item-list">
+                                <li>
+                                    Tecnologías Web II
+                                </li>
+                                <li>
+                                    Proyectos de Tecnologías de Información
+                                </li>
+                                <li>
+                                    Bases de Datos Distribuidas
+                                </li>
+                                <li>
+                                    Sistemas Operativos II
+                                </li>
+                                <li>
+                                    Estadística
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="accordion_item" data-aos="zoom-in">
+                    <button class="accordion_item-tilte">
+                        Octavo semestre
+                    </button>
+                    <div class="accordion_item-content">
+                        <div class="accordion_item-body">
+                            <ul class="accordion_item-list">
+                                <li>
+                                    Sistemas Distribuidos
+                                </li>
+                                <li>
+                                    Calidad de Software
+                                </li>
+                                <li>
+                                    Interacción Humano - Computadora
+                                </li>
+                                <li>
+                                    Organización de Centros de Informática
+                                </li>
+                                <li>
+                                    Investigación de Operaciones
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="accordion_item" data-aos="zoom-in">
+                    <button class="accordion_item-tilte">
+                        Noveno semestre
+                    </button>
+                    <div class="accordion_item-content">
+                        <div class="accordion_item-body">
+                            <ul class="accordion_item-list">
+                                <li>
+                                    Metodología de la Investigación
+                                </li>
+                                <li>
+                                    Seguridad de Centros de Informática
+                                </li>
+                                <li>
+                                    Teoría de Algoritmos
+                                </li>
+                                <li>
+                                    Optativa 1
+                                </li>
+                                <li>
+                                    Optativa 2
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="accordion_item" data-aos="zoom-in">
+                    <button class="accordion_item-tilte">
+                        Décimo semestre
+                    </button>
+                    <div class="accordion_item-content">
+                        <div class="accordion_item-body">
+                            <ul class="accordion_item-list">
+                                <li>
+                                    Seminario de Tesis
+                                </li>
+                                <li>
+                                    Auditoría de Sistemas
+                                </li>
+                                <li>
+                                    Función Informática
+                                </li>
+                                <li>
+                                    Optativa 1
+                                </li>
+                                <li>
+                                    Optativa 2
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="accordion_item" data-aos="zoom-in">
+                    <button class="accordion_item-tilte">
+                        Optativas noveno semestre
+                    </button>
+                    <div class="accordion_item-content">
+                        <div class="accordion_item-body">
+                            <ul class="accordion_item-list">
+                                <li>
+                                    Administración de Negocios I
+                                </li>
+                                <li>
+                                    Tecnologías de Información I
+                                </li>
+                                <li>
+                                    Sistemas de Información I
+                                </li>
+                                <li>
+                                    Inteligencia Artificial I
+                                </li>
+                                <li>
+                                    Matemáticas Aplicadas I
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="accordion_item" data-aos="zoom-in">
+                    <button class="accordion_item-tilte">
+                        Optativas décimo semestre
+                    </button>
+                    <div class="accordion_item-content">
+                        <div class="accordion_item-body">
+                            <ul class="accordion_item-list">
+                                <li>
+                                    Administración de Negocios II
+                                </li>
+                                <li>
+                                    Tecnologías de Información II
+                                </li>
+                                <li>
+                                    Sistemas de Información II
+                                </li>
+                                <li>
+                                    Inteligencia Artificial II
+                                </li>
+                                <li>
+                                    Matemáticas Aplicadas II
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <!-- /Plan de Estudios -->
+    </main>
+    <!-- Contenido -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-content-logo">
+                <a href="http://www.unsij.edu.mx/" target="_blank">
+                    <img src="./img/pictures/escudo-unsij-white.png" alt="Escudo de la UNSIJ."
+                        class="h-28 w-auto object-cover">
+                </a>
+                <a href="http://www.suneo.mx/" target="_blank">
+                    <img src="./img/pictures/escudo-suneo.png" alt="Escudo del SUNEO." class="h-14 w-auto object-cover">
+                </a>
+            </div>
+
+            <div class="footer-content-link">
+                <header class="footer-title">Medios de contacto</header>
+                <hr class="footer_line">
+                <a href="https://goo.gl/maps/1HaMWs4H2GPHsqrJ7" target="_blank" class="footer-link">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="footer-link-icon" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    Camino a la Universidad S/N, 68725 Ixtlán de Juárez, Oax.
+                </a>
+                <a href="http://www.unsij.edu.mx/" target="_blank" class="footer-link">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="footer-link-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
+                        </svg>
+                    </div>
+                    www.unsij.edu.mx
+                </a>
+                <a href="mailto:informatica@unsij.edu.mx" class="footer-link">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="footer-link-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                            <path
+                                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                        </svg>
+                    </div>
+                    informatica@unsij.edu.mx
+                </a>
+                <a href="tel:9515536362" class="footer-link">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="footer-link-icon" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    951 553 63 62
+                </a>
+            </div>
+
+            <div class="footer-content-link">
+                <header class="footer-title">Redes sociales</header>
+                <hr class="footer_line">
+                <div class="footer-content-social-icon">
+                    <a href="https://www.facebook.com/InformaticaUNSIJ/" target="_blank" class="footer-social_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook w-9 h-9"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/unsij_suneo?lang=es" target="_blank" class="footer-social_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter w-9 h-9"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/c/UNSIJ_SUNEO" target="_blank" class="footer-social_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-youtube w-9 h-9"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+
+    <!-- Menú -->
+    <script src="./js/mobile-menu.js"></script>
+    <!-- Tabs -->
+    <script src="./js/buttom-tabs.js"></script>
+    <!-- Accordion -->
+    <script src="./js/accordion.js"></script>
+
+    <!-- Animaciones -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animation.js"></script>
+
+    <!-- Carrusel -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/carousel.js"></script>
+</body>
+
+</html>
